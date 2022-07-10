@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        To-Do list
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b2ab60fa4e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="heading1">
+        <h1>A simple To-Do list</h1>
+    </div>
+    <div class="container">
+        <div id="child">
+            <div id="newtask">
+                <label for="taskname">Taskname</label>
+                <input type="text" id="taskname" placeholder="Enter Task name">
+                <label for="desc">Description</label>
+                <input type="textarea" id="desc" placeholder="Enter Description">
+                <label for="completion">Due-Date</label>
+                <input type="date" id="completion">
+                <button id="push">ADD</button>
+            </div>
+            <div id="tasks"></div>
+        </div>
+        <div id="child">
+            <div class="task-details">
+                <span id="task-name">Select a task</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

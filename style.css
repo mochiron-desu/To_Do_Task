@@ -1,0 +1,213 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg,
+            #1f1e20,
+            #211b23);
+}
+
+.heading1 {
+    background-color: #d9d8da;
+    padding: 10px 5px;
+    position: static;
+    width: 50%;
+    top: 5%;
+    border-radius: 8px;
+    text-align: center;
+    transform: translate(50%, 50%);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.24);
+    margin: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-gap: 50px;
+    border: 2px solide white;
+    width: 65%;
+    /* min-width: 450px; */
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 30px 20px;
+    overflow: auto;
+    height: auto;
+
+}
+
+.child {
+    margin: 10px;
+    border: 1px solid red;
+}
+
+#newtask {
+    position: relative;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.24);
+}
+
+#newtask input {
+    width: 70%;
+    height: 15px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+    border-radius: 5px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    padding: 3%;
+}
+
+#newtask input:focus {
+    outline: none;
+    border-color: #1f1e20;
+}
+
+#newtask button {
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: #ded0e3;
+    border: none;
+    color: #111111;
+    cursor: pointer;
+}
+
+#newtask button:hover {
+    background-color: #b8acbc;
+}
+
+#tasks {
+    background-color: #ffffff;
+    padding: 25px 20px;
+    margin-top: 60px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 100;
+    position: relative;
+}
+
+.task {
+    background-color: #ffffff;
+    height: auto;
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #d1d3d4;
+    cursor: pointer;
+}
+
+.task span {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    border-right: 10px;
+}
+
+.task button {
+    background-color: #1f1e20;
+    color: #ffffff;
+    height: auto;
+    width: auto;
+    padding: 15px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.task button:hover {
+    background-color: #39383b;
+}
+
+.completed {
+    background-color: #ffffff;
+    height: auto;
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #d1d3d4;
+    cursor: pointer;
+    text-decoration: line-through;
+}
+
+.completed span {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    border-right: 10px;
+}
+
+.completed button {
+    background-color: #1f1e20;
+    color: #ffffff;
+    height: auto;
+    width: auto;
+    padding: 15px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.completed button:hover {
+    background-color: #39383b;
+}
+
+.task-details {
+    background-color: white;
+    padding: 30px 30px;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    align-items: inherit;
+}
+
+.task-details-child {
+    background-color: #1f1e20;
+    padding: 10px 10px;
+    color: #d9d8da;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.28);
+
+}
+
+.task-details-child button {
+    padding: 12px 15px;
+    border: none;
+    background-color: #ded0e3;
+    border-radius: 5px;
+    color: #211b23;
+    border: 16px 16px;
+}
+
+.task-details-child button:hover {
+    background-color: #b9a8c0;
+}
+
+span#task-heading {
+    font-size: larger;
+}
